@@ -22,7 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "rfid_app.h"
-
+#include "card_db.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -102,6 +102,7 @@ int main(void)
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
     RFID_App_Init(&hspi1, &huart1);
+    CardDB_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
